@@ -51,7 +51,7 @@ jobs:
     - name: Run the thing
       shell: bash
       run: |
-        java -jar greetings-actions.jar ${{ github.events.inputs.myValues }}
+        java -jar greetings-actions.jar ${{ github.event.inputs.myValues }}
   
   count-args:
   
